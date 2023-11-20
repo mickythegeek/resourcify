@@ -335,6 +335,7 @@
                             </article>
                         </div>
                         <div class="col-lg-6">
+                            {% for post in posts%}
                             <article class="post-block-style-wrapper post-block-template-one sm-mt-24">
                                 <div class="post-block-style-inner">
                                     <div class="post-block-media-wrap">
@@ -345,11 +346,11 @@
                                     <div class="post-block-content-wrap">
                                         <div class="post-item-title">
                                             <h2 class="post-title">
-                                                <a href="post-single.html">Georgia’s voting law will make elections easier than ever</a>
+                                                <a href="post-single.html">{{ post.title }}</a>
                                             </h2>
                                         </div>
                                         <div class="post-excerpt-box">
-                                            <p>Tuesday’s primary is the first big test of the legislation, which was opposed by voting rights groups and Democrats.</p>
+                                            <p>{{ post.body }}</p>
                                         </div>
                                         <div class="post-bottom-meta-list">
                                             <div class="post-meta-author-box">
@@ -362,7 +363,8 @@
                                     </div>
                                 </div>
                             </article>
-                            <article class="post-block-style-wrapper post-block-template-one">
+                            {% endfor %}
+                            <!-- <article class="post-block-style-wrapper post-block-template-one">
                                 <div class="post-block-style-inner">
                                     <div class="post-block-media-wrap">
                                         <a href="post-single.html">
@@ -388,7 +390,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </article>
+                            </article> -->
                         </div>
                         <div class="col-lg-3">
                             <div class="section-title sm-mt-24">
