@@ -6,3 +6,8 @@ from .models import Post
 def index(request):
     posts = Post.objects.all()
     return render(request, 'index.html', {"posts" : posts})
+
+
+
+def post_single(request):
+    return render(request, 'post_single.html')
