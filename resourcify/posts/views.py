@@ -9,5 +9,6 @@ def index(request):
 
 
 
-def post_single(request):
-    return render(request, 'post_single.html')
+def post_single(request,pk):
+    posts = Post.objects.get(id=pk)
+    return render(request, 'post_single.html', {"posts" : posts})
