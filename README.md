@@ -22,7 +22,6 @@ Resourcify is a web-based platform designed to help tech enthusiasts discover an
 - Python
 - Django Framework
 - HTML/CSS/JavaScript
-- [Add other technologies/tools as applicable]
 
 ## Getting Started
 1. Clone the repository: `git clone https://github.com/yourusername/resourcify.git`
